@@ -1,0 +1,15 @@
+version: '2'
+services:
+  comida-boteco-db:
+    extends:
+      file: mysql.yml
+      service: comida-boteco-db
+  comida-boteco-app:
+    build: .
+    ports:
+    - "8001:8080"
+    links:
+    - comida-boteco-db:localhost
+  redis:
+    image: redis
+
