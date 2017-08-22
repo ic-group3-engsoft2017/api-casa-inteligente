@@ -1,11 +1,11 @@
 # API Casa Inteligente
 
 ## Alunos
-+ Amanda
-+ Jorge Luis Tavares Reis
++ Amanda Paiola
++ Jorge Luiz Reis Tavares
 + Luiz Henrique Pegoraro
-+ Felipe
-+ Tiago
++ Felipe Silva Rocha
++ Tiago Eduardo
 
 ## Como iniciar?
 ```sh

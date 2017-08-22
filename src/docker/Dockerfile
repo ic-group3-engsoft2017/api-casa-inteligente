@@ -1,8 +1,8 @@
 FROM frolvlad/alpine-oraclejdk8:slim
 
-VOLUME /tmp
+VOLUME /volume
 
-ADD comida-boteco-0.0.1-SNAPSHOT.jar app.jar
+ADD api-casa-inteligente-0.0.1-SNAPSHOT.jar
 
 RUN sh -c 'touch /app.jar'
 

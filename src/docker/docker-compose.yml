@@ -1,15 +1,17 @@
 version: '2'
 services:
-  comida-boteco-db:
+  casa-inteligente-db:
     extends:
       file: mysql.yml
       service: comida-boteco-db
-  comida-boteco-app:
+  casa-inteligente-app:
     build: .
     ports:
-    - "8001:8080"
+      - "8001:8080"
     links:
-    - comida-boteco-db:localhost
+      - casa-inteligente-db:localhost
+    volumes:
+      - /home/CIT/jluiz/git-ees/api-casa-inteligente/:/volume
   redis:
     image: redis
 
