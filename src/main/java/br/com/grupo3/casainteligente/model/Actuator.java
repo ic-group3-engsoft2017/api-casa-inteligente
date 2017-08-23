@@ -19,6 +19,7 @@ public class Actuator {
     private Long id;
     private String name;
 
+
     @ManyToOne(fetch=FetchType.LAZY)
     private Residence residence;
 }
