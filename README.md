@@ -2,9 +2,10 @@
 
 ## Alunos
 + Amanda Paiola
++ Diego Costa
++ Felipe Silva Rocha
 + Jorge Luiz Reis Tavares
 + Luiz Henrique Pegoraro
-+ Felipe Silva Rocha
 + Tiago Eduardo
 
 ## Como iniciar?
