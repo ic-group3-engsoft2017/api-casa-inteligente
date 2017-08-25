@@ -1,17 +1,11 @@
 version: '2'
 services:
-  casa-inteligente-db:
-    extends:
-      file: mysql.yml
-      service: comida-boteco-db
   casa-inteligente-app:
-    build: .
+    image: casa-inteligente:latest
+    container_name: casainteligente
+    hostname: localhost
     ports:
       - "8001:8080"
-    links:
-      - casa-inteligente-db:localhost
     volumes:
       - /home/CIT/jluiz/git-ees/api-casa-inteligente/:/volume
-  redis:
-    image: redis
 
