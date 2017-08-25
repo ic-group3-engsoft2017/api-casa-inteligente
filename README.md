@@ -20,21 +20,19 @@ cd api-casa-inteligente
 
 ### [Docker](https://www.docker.com)
 ```sh
-./mvnw clean install
 
-cd src/docker
+*Gerando a imagem Docker
 
-docker-compose build
+cd $APP_BASE_PATH/src/docker
+ 
+docker build -t casa-inteligente:latest .
 
-```
-### [Kubernetes](https://kubernetes.io/)
-TBD
+*Gerando o container a partir da imagem criada
 
-### Legacy
-```sh
-./mvnw clean install
+cd $APP_BASE_PATH/src/docker
 
-java -jar target/api-casa-inteligente-$VERSION.jar
+docker-compose up
+
 ```
 ### [Acessando]
 ```
