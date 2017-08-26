@@ -13,8 +13,8 @@ public class SmartHouseApplication {
 	private static Logger log = LoggerFactory.getLogger(SmartHouseApplication.class);
 
 	public static void main(String[] args) {
-		
 		log.info("Booting...");
 		SpringApplication.run(SmartHouseApplication.class, args);
+		log.info("Boot finished");
 	}
 }
