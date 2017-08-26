@@ -9,7 +9,5 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RepositoryRestResource
 @EnableSwagger2
 public interface ActuatorRepository extends JpaRepository<Actuator, Long> {
-
-
 }
 
