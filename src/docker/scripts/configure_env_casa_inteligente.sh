@@ -20,7 +20,7 @@ _install_git() {
 _cloning_git_repos() {
     echo "cloning a repository..."
     mkdir -p /home/casainteligente
-    git clone -b master https://e41cde3cc67e11b8b4f232aceeeff34512c7b795:x-oauth-basic@github.com/ic-group3-engsoft2017/api-casa-inteligente.git /home/app/casainteligente
+    git clone -b master https://{user_auth_token}:x-oauth-basic@github.com/ic-group3-engsoft2017/api-casa-inteligente.git /home/app/casainteligente
     echo "repository was cloned"
 }
 
